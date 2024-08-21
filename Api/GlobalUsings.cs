@@ -1,1 +1,9 @@
-﻿global using Domain.Interfaces.CensusAggregate.Isar;
+﻿global using Api;
+global using Api.Bootstrapper.TrafficAggregate;
+global using Infrastructure;
+global using Domain.Interfaces.TrafficAggregate.User;
+global using Infrastructure.Implementations.TrafficAggregate.User;
+global using Domain.Entities.TrafficAggregate.User;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Authorization;
+global using Api.Helpers;

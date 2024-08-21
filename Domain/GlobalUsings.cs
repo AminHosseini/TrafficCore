@@ -1,2 +1,2 @@
-﻿global using Domain.Common;
-global using Domain.Entities.CensusAggregate.Isar.Moserin;
+﻿global using System.Diagnostics.CodeAnalysis;
+global using Domain.Entities.TrafficAggregate.User;

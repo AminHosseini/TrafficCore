@@ -7,15 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.1.35" />
+    <Compile Remove="DapperConfiguration\**" />
+    <EmbeddedResource Remove="DapperConfiguration\**" />
+    <None Remove="DapperConfiguration\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DapperConfiguration\" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Implementations\TrafficAggregate\Account\" />
   </ItemGroup>
 
 </Project>
